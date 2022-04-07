@@ -6,6 +6,13 @@ sh_test(
     data = ["container_data.txt"],
 )
 
+genrule(
+    name = "pass_env",
+    outs = ["pass_env.sh"],
+    cmd = "echo \"export USER='$USER'\" > \"$OUT\"",
+    pass_env = ["USER"],
+)
+
 sh_test(
     name = "pass_env_test",
     src = "pass_env_test.sh",
