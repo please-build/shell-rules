@@ -1,0 +1,5 @@
+[Please]
+Version = 16.20.0-beta.14
+
+[FeatureFlags]
+ExcludeShellRules = true
