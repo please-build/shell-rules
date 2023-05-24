@@ -14,6 +14,12 @@ plugin_repo(
 )
 ```
 
+And add the following to your `.plzconfig`:
+```
+[Plugin "shell"]
+Target = //plugins:shell
+```
+
 And then use `subinclude("///shell//build_defs:shell")` to make the rules available in 
 a BUILD file. 
 
