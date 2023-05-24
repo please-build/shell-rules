@@ -23,7 +23,12 @@ The `sh_cmd()` rule can be used to run a bash command:
 ```python
 subinclude("///shell//build_defs:shell")
 
-sh_cmd(name="hello_world", cmd="echo hello, world!")
+sh_cmd(name="hello_world", cmd="echo Hello, world!")
+```
+
+```
+$ plz run //:hello_world
+Hello, world!
 ```
 
 ## sh_binary()
@@ -43,6 +48,11 @@ And then add `hello.sh`:
 #!/bin/bash
 
 echo Hello, world!
+```
+
+```
+$ plz run //:hello_world
+Hello, world!
 ```
 
 ## sh_test()
