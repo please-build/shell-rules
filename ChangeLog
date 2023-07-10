@@ -1,6 +1,10 @@
+Version 0.2.0
+-------------
+    * Use newer ARCAT_TOOL config option instead of JARCAT_TOOL
+
 Version 0.1.2
 -------------
-    * Add plugin definition 
+    * Add plugin definition
 
 Version 0.1.1
 -------------
