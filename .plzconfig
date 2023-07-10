@@ -4,6 +4,3 @@ Version = >=17.0.0
 [PluginDefinition]
 Name = shell
 Description = rules for creating .sh files
-
-[FeatureFlags]
-ExcludeShellRules = true
