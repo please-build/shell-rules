@@ -1,9 +1,6 @@
 [Please]
-Version = 16.20.0-beta.14
+Version = >=17.0.0
 
 [PluginDefinition]
 Name = shell
 Description = rules for creating .sh files
-
-[FeatureFlags]
-ExcludeShellRules = true

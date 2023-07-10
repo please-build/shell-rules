@@ -1,3 +1,5 @@
+subinclude("//build_defs:shell")
+
 # This tests that data files exist in the correct location, and
 # indirectly performs a basic test of sh_test which we don't use elsewhere.
 sh_test(
