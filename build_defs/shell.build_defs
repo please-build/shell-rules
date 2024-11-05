@@ -51,7 +51,7 @@ def sh_binary(name:str, main:str|list&srcs, out:str="", deps:list=None, data:lis
       name (str): Name of the rule
       main (str | list): The script to execute after all files have been uncompressed
       out (str): Name of the output file to create. Defaults to name + .sh.
-      data (list): Runtime data for this rule.
+      data (list): Runtime dependencies and data for this rule.
       deps (list): Dependencies of this rule
       visibility (list): Visibility declaration of the rule.
       labels (list): List of labels.
