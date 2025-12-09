@@ -45,7 +45,7 @@ def sh_binary(name:str, main:str|list&srcs, out:str="", deps:list=None, data:lis
     The resulting script will contain three things:
     1) Code necessary to unzip dependent files.
     2) The user defined shell script.
-    3) The zipfile containing all dependent files.
+    3) The zipfile containing all dependent files, (but not those dependencies' run-time data).
 
     Args:
       name (str): Name of the rule
@@ -86,6 +86,7 @@ def sh_binary(name:str, main:str|list&srcs, out:str="", deps:list=None, data:lis
         deps = deps,
         binary = True,
         needs_transitive_deps = True,
+        runtime_deps_from_deps = True,
         labels = labels,
         visibility = visibility,
     )
