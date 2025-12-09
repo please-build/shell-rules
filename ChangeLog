@@ -1,3 +1,7 @@
+Version 0.2.1
+-------------
+    * `sh_binary`: require dependencies' run-time dependencies (#9)
+
 Version 0.2.0
 -------------
     * Use newer ARCAT_TOOL config option instead of JARCAT_TOOL
